@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "email": "dashing4149@gmail.com",
+      "password_hash": "$2a$10$ILa7US5zPQwYjFgUyqjsRePyk7MG5LSd7t5p7MKw2f17R2Dam3Zs.",
+      "full_name": "Aditya",
+      "role": "user",
+      "created_at": "2025-10-05T00:19:58.809Z",
+      "updated_at": "2025-10-05T00:19:58.809Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "lnDcARVySnLDPuHeAgx-j",
+      "title": "Yooo",
+      "description": "Bitch!!!!!",
+      "status": "open",
+      "priority": "medium",
+      "category": null,
+      "creator_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "assignee_id": null,
+      "sla_due_at": "2025-10-05T12:20:41.937Z",
+      "sla_breached": 0,
+      "latest_comment_excerpt": "Nah",
+      "latest_comment_at": "2025-10-05T00:21:38.172Z",
+      "version": 0,
+      "created_at": "2025-10-05T00:20:41.937Z",
+      "updated_at": "2025-10-05T00:21:38.172Z"
+    }
+  ],
+  "ticketComments": [
+    {
+      "id": "RjQTy1Z4n_IAlDKbBswN-",
+      "ticket_id": "lnDcARVySnLDPuHeAgx-j",
+      "author_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "body": "Nah",
+      "parent_comment_id": null,
+      "created_at": "2025-10-05T00:21:38.172Z",
+      "updated_at": "2025-10-05T00:21:38.172Z"
+    }
+  ],
+  "ticketEvents": [
+    {
+      "id": "dad20491-186e-4783-8ebc-4a300c552472",
+      "ticket_id": "lnDcARVySnLDPuHeAgx-j",
+      "actor_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "type": "TICKET_CREATED",
+      "payload": "{\"priority\":\"medium\",\"assigneeId\":null}",
+      "created_at": "2025-10-05T00:20:41.939Z"
+    },
+    {
+      "id": "df77fd6e-541d-45e3-99fd-4f56f69b8722",
+      "ticket_id": "lnDcARVySnLDPuHeAgx-j",
+      "actor_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "type": "COMMENT_ADDED",
+      "payload": "{\"commentId\":\"RjQTy1Z4n_IAlDKbBswN-\",\"parentCommentId\":null}",
+      "created_at": "2025-10-05T00:21:38.172Z"
+    }
+  ],
+  "idempotencyKeys": [
+    {
+      "key": "059625a1-bcc8-46f5-ac71-446775c1ccb0",
+      "user_id": null,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "request_hash": "7095d6b155ecccda158317440df0ae5f1e2dcd4421c29b8960e8b62890b101a6",
+      "response_body": "{\"error\":{\"code\":\"INVALID_CREDENTIALS\",\"message\":\"Invalid credentials\"}}",
+      "status_code": 401,
+      "created_at": "2025-10-05T00:18:43.720Z"
+    },
+    {
+      "key": "322a3b77-05c0-41de-95ac-4fc10fb34e8c",
+      "user_id": null,
+      "method": "POST",
+      "path": "/register",
+      "request_hash": "d992ee1aeb5fccb7a9a5e670d2d00ea9dd5d8a66d723599a1fb17a0a7462d1bc",
+      "response_body": "{\"data\":{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlUTlIdk1zQzZrSkdudVRzZElBem4iLCJyb2xlIjoidXNlciIsImlhdCI6MTc1OTYyMzU5OCwiZXhwIjoxNzU5NjY2Nzk4fQ.AVT0XmPggN-HKIqcjL8Mg9I45h3mWyIxKiB41yb0R5o\",\"user\":{\"id\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"email\":\"dashing4149@gmail.com\",\"fullName\":\"Aditya\",\"role\":\"user\"}}}",
+      "status_code": 201,
+      "created_at": "2025-10-05T00:19:58.813Z"
+    },
+    {
+      "key": "a96ec400-5188-4406-9c24-94fc3e55d511",
+      "user_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "method": "POST",
+      "path": "/api/tickets",
+      "request_hash": "6204c6b3fe52493a3f0fe796ee8ddd4a2b21afc0670ae889878554cc905ae7ff",
+      "response_body": "{\"error\":{\"code\":\"VALIDATION_ERROR\",\"message\":\"String must contain at least 3 character(s)\",\"field\":\"title\"}}",
+      "status_code": 400,
+      "created_at": "2025-10-05T00:20:31.203Z"
+    },
+    {
+      "key": "1d35d545-5c35-4d61-9ec4-1ebbf9cbcb45",
+      "user_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "method": "POST",
+      "path": "/api/tickets",
+      "request_hash": "11c5e8836a1990678c179b4b69194eb1d98f3e3bd4dc71fa4f9a77b7a8fc43d2",
+      "response_body": "{\"error\":{\"code\":\"VALIDATION_ERROR\",\"message\":\"String must contain at least 10 character(s)\",\"field\":\"description\"}}",
+      "status_code": 400,
+      "created_at": "2025-10-05T00:20:35.897Z"
+    },
+    {
+      "key": "fbe6206e-798b-4cf1-b0f5-a5c26e99fb5f",
+      "user_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "method": "POST",
+      "path": "/",
+      "request_hash": "eccbe88304a077d74eb061a185e420950d6fd3aedf340b862c94122078babbd3",
+      "response_body": "{\"data\":{\"ticket\":{\"id\":\"lnDcARVySnLDPuHeAgx-j\",\"title\":\"Yooo\",\"status\":\"open\",\"priority\":\"medium\",\"category\":null,\"creatorId\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"assigneeId\":null,\"slaDueAt\":\"2025-10-05T12:20:41.937Z\",\"slaBreached\":false,\"latestCommentExcerpt\":null,\"latestCommentAt\":null,\"version\":0,\"createdAt\":\"2025-10-05T00:20:41.937Z\",\"updatedAt\":\"2025-10-05T00:20:41.937Z\",\"description\":\"Bitch!!!!!\",\"comments\":[],\"timeline\":[{\"id\":\"dad20491-186e-4783-8ebc-4a300c552472\",\"actorId\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"type\":\"TICKET_CREATED\",\"payload\":{\"priority\":\"medium\",\"assigneeId\":null},\"createdAt\":\"2025-10-05T00:20:41.939Z\"}]}}}",
+      "status_code": 201,
+      "created_at": "2025-10-05T00:20:41.940Z"
+    },
+    {
+      "key": "94b25832-867a-4299-b269-b9d53553fbad",
+      "user_id": "eQ9HvMsC6kJGnuTsdIAzn",
+      "method": "POST",
+      "path": "/lnDcARVySnLDPuHeAgx-j/comments",
+      "request_hash": "43b237ee277edcf90145b5ced55cc8bb4bd420552d2633e51cbd32d6c9299790",
+      "response_body": "{\"data\":{\"ticket\":{\"id\":\"lnDcARVySnLDPuHeAgx-j\",\"title\":\"Yooo\",\"status\":\"open\",\"priority\":\"medium\",\"category\":null,\"creatorId\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"assigneeId\":null,\"slaDueAt\":\"2025-10-05T12:20:41.937Z\",\"slaBreached\":false,\"latestCommentExcerpt\":\"Nah\",\"latestCommentAt\":\"2025-10-05T00:21:38.172Z\",\"version\":0,\"createdAt\":\"2025-10-05T00:20:41.937Z\",\"updatedAt\":\"2025-10-05T00:21:38.172Z\",\"description\":\"Bitch!!!!!\",\"comments\":[{\"id\":\"RjQTy1Z4n_IAlDKbBswN-\",\"ticket_id\":\"lnDcARVySnLDPuHeAgx-j\",\"author_id\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"body\":\"Nah\",\"parent_comment_id\":null,\"created_at\":\"2025-10-05T00:21:38.172Z\",\"updated_at\":\"2025-10-05T00:21:38.172Z\",\"replies\":[]}],\"timeline\":[{\"id\":\"dad20491-186e-4783-8ebc-4a300c552472\",\"actorId\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"type\":\"TICKET_CREATED\",\"payload\":{\"priority\":\"medium\",\"assigneeId\":null},\"createdAt\":\"2025-10-05T00:20:41.939Z\"},{\"id\":\"df77fd6e-541d-45e3-99fd-4f56f69b8722\",\"actorId\":\"eQ9HvMsC6kJGnuTsdIAzn\",\"type\":\"COMMENT_ADDED\",\"payload\":{\"commentId\":\"RjQTy1Z4n_IAlDKbBswN-\",\"parentCommentId\":null},\"createdAt\":\"2025-10-05T00:21:38.172Z\"}]}}}",
+      "status_code": 201,
+      "created_at": "2025-10-05T00:21:38.181Z"
+    }
+  ],
+  "migrations": []
+}

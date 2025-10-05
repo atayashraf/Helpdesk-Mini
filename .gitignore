@@ -1,0 +1,10 @@
+node_modules/
+dist/
+server/dist/
+server/coverage/
+server/data/*.sqlite
+server/data/*.sqlite-journal
+client/dist/
+.env
+server/.env
+auth.log

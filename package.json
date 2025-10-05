@@ -1,0 +1,13 @@
+{
+  "name": "helpdesk-mini-monorepo",
+  "private": true,
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "postinstall": "npm run build -w server",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "test": "npm test -w server",
+    "lint": "npm run lint -w server && npm run lint -w client",
+    "build": "npm run build -w server && npm run build -w client"
+  }
+}

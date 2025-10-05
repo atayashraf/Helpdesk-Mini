@@ -1,0 +1,9 @@
+{
+  "name": "HelpDesk Mini",
+  "description": "SLA-aware ticketing system with role-based workflows for Skillion Full-Stack Hackathon 2025.",
+  "contact": "admin@mail.com",
+  "links": {
+    "repository": "https://example.com/repo",
+    "docs": "/README.md"
+  }
+}
