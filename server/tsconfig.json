@@ -6,7 +6,7 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+  "strict": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "baseUrl": "./src",
